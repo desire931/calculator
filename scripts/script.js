@@ -35,5 +35,9 @@ function calculate() {
 // Function to toggle history visibility
 function toggleHistory() {
   let h = document.getElementById("history");
-  h.style.display = h.style.display === "none" ? "block" : "none";
+  if (h.style.display === "none" || h.style.display === "") {
+    h.style.display = "block";
+  } else {
+    h.style.display = "none";
+  }
 }

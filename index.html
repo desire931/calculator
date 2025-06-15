@@ -20,7 +20,7 @@
           <!-- First row: Clear, Delete, Dot, Divide -->
           <div>
             <input type="button" value="AC" onclick="clearDisplay()" class="operator" />
-            <input type="button" value="DE" onclick="deleteLast()" class="operator" />
+            <input type="button" value="⌫" onclick="deleteLast()" class="operator" />
             <input type="button" value="." onclick="appendValue('.')" class="operator" />
             <input type="button" value="/" onclick="appendValue('/')" class="operator" />
           </div>
@@ -62,7 +62,7 @@
       </div>
 
       <!-- History area (hidden by default) -->
-      <div id="history" style="display:none;">
+      <div id="history" style="display: none;">
         <h3>Calculation History</h3>
         <!-- History list where previous calculations will be added -->
         <ul id="historyList"></ul>
